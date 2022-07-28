@@ -1,0 +1,143 @@
+ /* * {
+     border: 1px solid green;
+ } */
+
+ html,
+ body {
+     margin: 0px;
+     height: 99%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ nav {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     height: 10vh;
+     border-bottom: 3px;
+     border-style: solid;
+
+ }
+
+ .media {
+     display: flex;
+     justify-content: space-evenly;
+     column-gap: 5vw;
+ }
+
+ img {
+     height: 3vw;
+ }
+
+ h1 {
+     font-family: hand;
+     font-size: 3vh;
+     cursor: not-allowed;
+ }
+
+
+ .hashtag {
+     font-family: monospace;
+ }
+
+ .dot {
+     height: 10vh;
+     width: 10vh;
+     background-color: yellow;
+     border-radius: 100%;
+     position: absolute;
+     left: 20vw;
+
+ }
+
+ p {
+     font-size: 3vw;
+     text-align: left;
+     padding-right: 2em;
+     margin-left: 2em;
+     background-color: rgba(240, 248, 255, 0.253);
+
+ }
+
+ #max {
+     font-family: hand;
+     color: rgb(255, 187, 0);
+     font-size: 4vw;
+     text-decoration: underline wavy;
+ }
+
+ article {
+     display: flex;
+     justify-content: center;
+     justify-items: center;
+     height: 100%;
+     flex-direction: column;
+     background-image: url(https://picsum.photos/1000/500/?blur);
+     background-size: cover;
+ }
+
+ svg {
+     width: 30%;
+     transition: 1.5s;
+     position: absolute;
+     right: 15em;
+     bottom: 20%;
+     animation: rotate;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+ }
+
+ @keyframes rotate {
+     from {
+         transform: rotate(0deg);
+     }
+
+     to {
+         transform: rotate(360deg);
+     }
+ }
+
+ #facer {
+     position: absolute;
+     right: 20%;
+     bottom: 35%;
+     height: 25%;
+     border-radius: 10em;
+     transition: 1s;
+ }
+
+ .spin {
+     transition: 1s;
+ }
+
+ .spin:hover #facer {
+     margin-bottom: 3em;
+     margin-right: 1em;
+ }
+
+ .spin:hover svg {
+     margin-right: 4em;
+     transform: rotate(100deg);
+ }
+
+ .not2 {
+     font-size: 1.5em;
+     margin-left: 6em;
+     width: 15em;
+     padding: 2%;
+     background-color: whitesmoke;
+ }
+
+ a:link,
+ a:hover,
+ a:visited {
+     color: orange;
+ }
+
+ @font-face {
+     font-family: hand;
+     src: url(Pacifico-Regular.ttf);
+ }
